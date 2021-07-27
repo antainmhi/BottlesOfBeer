@@ -4,24 +4,26 @@ function lyrics(){
         var bottleWord = "bottle";
        if (numberOfBottles <= 0) {
           bottleWord = "bottles";
-          console.log("No more " + bottleWord + " of beer on the wall."); 
-          console.log("No more " + bottleWord + " of beer,");
-          console.log("Go to the store and buy some more, 99 bottles of beer on the wall");
+          document.getElementById("demo").innerHTML += "No more " + bottleWord + " of beer on the wall. <br>"; 
+          document.getElementById("demo").innerHTML +="No more " + bottleWord + " of beer,<br>";
+          document.getElementById("demo").innerHTML +="Go to the store and buy some more, <br> 99 bottles of beer on the wall";
        }
        else if (numberOfBottles == 1 ) {
            bottleWord = "bottle";
-           console.log(numberOfBottles + " " + bottleWord + " of beer on the wall");
-           console.log(numberOfBottles + " " + bottleWord + " of beer,");
-           console.log("Take one down, pass it around,");
+           document.getElementById("demo").innerHTML += numberOfBottles + " " + bottleWord + " of beer on the wall <br>";
+           document.getElementById("demo").innerHTML +=numberOfBottles + " " + bottleWord + " of beer,<br>";
+           document.getElementById("demo").innerHTML +="Take one down, pass it around,<br>";
        }
        else if (numberOfBottles >= 2) {
            bottleWord = "bottles";
-           console.log(numberOfBottles + " " + bottleWord + " of beer on the wall");
-           console.log(numberOfBottles + " " + bottleWord + " of beer,");
-           console.log("Take one down, pass it around,");
+           document.getElementById("demo").innerHTML +=numberOfBottles + " " + bottleWord + " of beer on the wall <br>";
+           document.getElementById("demo").innerHTML +=numberOfBottles + " " + bottleWord + " of beer, <br>";
+           document.getElementById("demo").innerHTML +="Take one down, pass it around, <br>";
      
        }
            
     }
+
+    document.getElementById("demo").innerHTML += text;
 
 }
